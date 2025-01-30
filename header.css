@@ -1,0 +1,413 @@
+html,
+body {
+    height: 100%;
+    padding: 0; 
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url(https://storage.googleapis.com/pod_public/1300/128565.jpg);
+    background-size: cover;
+    max-width: 100%;
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    position: fixed;
+    background-color: #F8C8DC;
+    width: 100%;
+    height: auto;
+    z-index: 1000;
+}
+
+footer.footer {
+    margin-top: auto;
+    /* Pitää footerin alhaalla */
+    width: 100%;
+    background-color: #F8C8DC !important;
+}
+
+footer .links {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+footer .links .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .links .column2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .column a,
+footer .column2 a {
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    /* Poistetaan linkkien alleviivaus */
+}
+
+footer .column a:hover,
+footer .column2 a:hover {
+    color: grey;
+}
+
+footer .column a::before,
+footer .column2 a::before {
+    content: "→";
+    margin-right: 5px;
+    display: inline-block;
+    font-size: 15px;
+}
+
+/* hakupalkki */
+.search-container {
+    width: 50%;
+    display: flex;
+    padding-left: 15%;
+    margin-bottom: 3%;
+    align-items: center;
+    background-color: transparent !important;
+}
+
+.search-container input[type="text"] {
+    width: 70%;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-right: -25px;
+    /* Poistaa välin hakupalkin ja hae-napin välillä */
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Luodaan varjoefekti */
+    background-color: transparent;
+}
+
+.search-container button {
+    border-radius: 10px;
+    background-color: #F8C8DC;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-title {
+    margin-bottom: 12%;
+}
+
+.image-container img {
+    width: 100%;
+    max-height: 550px;
+    object-fit: cover;
+}
+
+.card {
+    background-color: transparent;
+    border: none;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+    gap: 0;
+}
+
+section {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+.bd-mode-toggle .dropdown-menu .active .bi {
+    display: block !important;
+}
+
+.custom-btn {
+    background-color: black !important;
+    /* Custom background color */
+    color: white !important;
+    /* Custom text color */
+    border: none;
+    /* Remove border */
+}
+
+
+.custom-btn:hover {
+    background-color: grey;
+    /* Darker shade on hover */
+}
+
+.nav-pills .nav-item {
+    display: flex;
+    /* Lisää marginaalia navigointinappien väliin */
+    margin-bottom: 5%;
+}
+
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link:hover {
+    color: grey;
+}
+
+.navbar-nav .nav-item .nav-link {
+    padding: 10px 15px;
+}
+
+.navbar {
+    padding-left: 150px;
+    padding-right: 100px;
+}
+
+
+.navbar-toggler {
+    margin-left: auto;
+}
+
+.navbar-collapse {
+    margin-top: 5% !important;
+    top: 100%;
+}
+
+.card {
+    background-color: transparent;
+    border: none;
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+}
+
+.card-img-top {
+    height: 245px;
+}
+
+.card-img-top:hover {
+    transform: scale(1.05);
+    /* Kuvan suurentaminen 5% */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    /* Lisää varjo, kun kuva nousee */
+}
+
+.album {
+    margin-top: 2rem;
+    margin-left: 0;
+}
+
+.logo {
+    display: block;
+    width: 140px;
+    height: auto;
+    object-fit: contain;
+    /* Varmistetaan, että kuva ei veny tai vääristy */
+}
+
+.col-md-6 {
+    flex: 1;
+    padding: 0 15px;
+    padding-bottom: 40px;
+}
+
+/* Ettei boxien sisällöt mene yli */
+section {
+    margin: 0 10%;
+}
+
+form {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    width: 100%;
+}
+
+.pdd {
+    padding: 5%;
+}
+
+
+.content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.instagram {
+    width: 45px;
+    height: auto;
+    margin: 0;
+    mix-blend-mode: darken;
+  }
+
+  .facebook {
+    width: 40px;
+    height: auto;
+    margin: -0.3rem;
+    margin-top: -0.5rem;
+    mix-blend-mode: darken;
+  }
+
+/* media */
+@media (max-width:768px) {
+
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+    
+    .navbar {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        background-color: #F8C8DC;
+        border-radius: 5px;
+        margin-top: 200px;
+    }
+
+    footer {
+        font-size: 10px;
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .logo {
+        max-height: 20px;
+        /* Mobiilissa logo on vielä pienempi */
+    }
+
+    .card-img-top {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .album {
+        margin-top: 5% !important;
+    }
+
+    .search-container {
+        justify-content: left;
+        width: 80%;
+        padding-left: 0;
+        margin: 0 auto;
+        margin-top: 0;
+    }
+
+    .search-container input[type="text"] {
+        width: 90%;
+    }
+
+    .image-container img {
+        padding-top: 20%;
+        object-fit: cover;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    form {
+        margin-top: 0;
+    }
+
+    .pdd {
+        padding: 20%;
+    }
+
+    .footer .links {
+        flex-direction: column;
+        gap: 0;
+    }
+
+}
+
+
+@media (max-width:1200px) {
+    .navbar {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        background-color: #F8C8DC;
+        border-radius: 5px;
+        margin-top: 50px;
+    }
+
+    .image-container img {
+        margin-top: 10%;
+        object-fit: cover;
+    }
+
+    footer {
+        font-size: 10px;
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .logo {
+        max-height: 200px;
+        /* Mobiilissa logo on vielä pienempi */
+    }
+
+    .card-img-top {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .album {
+        margin-top: 0;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 5%;
+        padding-right: 5%;
+        gap: 30px;
+    }
+}
